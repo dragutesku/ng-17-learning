@@ -1,0 +1,32 @@
+.layout {
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr;
+  grid-template-areas:  "side-area main-area"
+                        "side-area main-area"
+                        "side-area main-area";
+ gap: 8px;
+}
+
+.header {
+  grid-area: header;
+}
+.side-area {
+  grid-area: side-area;
+}
+.main-area {
+  grid-area: main-area;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: auto;
+  grid-template-areas:  "header"
+                        "content"
+                        "footer";
+  gap: 8px;
+}
+
+.content {
+  grid-area: content;
+}
+
+.footer {
+  grid-area: footer;
+}
