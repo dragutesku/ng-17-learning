@@ -4,7 +4,6 @@
   grid-template-areas:  "side-area main-area"
                         "side-area main-area"
                         "side-area main-area";
- gap: 8px;
 }
 
 .header {
@@ -20,7 +19,6 @@
   grid-template-areas:  "header"
                         "content"
                         "footer";
-  gap: 8px;
 }
 
 .content {

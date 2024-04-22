@@ -1,1 +1,12 @@
-<p>Sidebar Works</p>
+<div class="flex h-full bg-white rounded-sm shadow">
+  <p-menu [model]="items">
+      <ng-template pTemplate="item" let-item>
+          <a [attr.tabindex]="-1" class="p-menuitem-link flex justify-content-between align-items-center p-3" [routerLink]="item.routerLink">
+              <div>
+                  <span [class]="item.icon"></span>
+                  <span> {{ item.label }}</span>
+              </div>
+          </a>
+      </ng-template>
+  </p-menu>
+</div>
