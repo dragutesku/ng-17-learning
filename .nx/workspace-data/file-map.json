@@ -10,73 +10,6 @@
   "fileMap": {
     "nonProjectFiles": [],
     "projectFileMap": {
-      "shared": [
-        {
-          "file": "projects/shared/README.md",
-          "hash": "3035302753453521943"
-        },
-        {
-          "file": "projects/shared/ng-package.json",
-          "hash": "5062216376980136957"
-        },
-        {
-          "file": "projects/shared/package.json",
-          "hash": "9785118987617127508",
-          "deps": [
-            "npm:@angular/common",
-            "npm:@angular/core",
-            "npm:tslib"
-          ]
-        },
-        {
-          "file": "projects/shared/project.json",
-          "hash": "5855884836570009016"
-        },
-        {
-          "file": "projects/shared/src/lib/shared.component.spec.ts",
-          "hash": "650800385680690823",
-          "deps": [
-            "npm:@angular/core"
-          ]
-        },
-        {
-          "file": "projects/shared/src/lib/shared.component.ts",
-          "hash": "15617281624713016543",
-          "deps": [
-            "npm:@angular/core"
-          ]
-        },
-        {
-          "file": "projects/shared/src/lib/shared.service.spec.ts",
-          "hash": "5361797003877539571",
-          "deps": [
-            "npm:@angular/core"
-          ]
-        },
-        {
-          "file": "projects/shared/src/lib/shared.service.ts",
-          "hash": "3783585000512505207",
-          "deps": [
-            "npm:@angular/core"
-          ]
-        },
-        {
-          "file": "projects/shared/src/public-api.ts",
-          "hash": "8055451356635070380"
-        },
-        {
-          "file": "projects/shared/tsconfig.lib.json",
-          "hash": "12369024473565967613"
-        },
-        {
-          "file": "projects/shared/tsconfig.lib.prod.json",
-          "hash": "1939170332703490951"
-        },
-        {
-          "file": "projects/shared/tsconfig.spec.json",
-          "hash": "11730399207539946696"
-        }
-      ],
       "ng-17-learning": [
         {
           "file": ".editorconfig",
@@ -152,7 +85,7 @@
         },
         {
           "file": "src/app/app.component.html",
-          "hash": "17816966185630879015"
+          "hash": "2399373701525192025"
         },
         {
           "file": "src/app/app.component.scss",
@@ -168,7 +101,7 @@
         },
         {
           "file": "src/app/app.component.ts",
-          "hash": "5676347693317988720",
+          "hash": "14806624461679364130",
           "deps": [
             "npm:@angular/core"
           ]
@@ -377,6 +310,73 @@
         {
           "file": "tsconfig.spec.json",
           "hash": "15575553540147145788"
+        }
+      ],
+      "shared": [
+        {
+          "file": "projects/shared/README.md",
+          "hash": "3035302753453521943"
+        },
+        {
+          "file": "projects/shared/ng-package.json",
+          "hash": "5062216376980136957"
+        },
+        {
+          "file": "projects/shared/package.json",
+          "hash": "9785118987617127508",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "npm:tslib"
+          ]
+        },
+        {
+          "file": "projects/shared/project.json",
+          "hash": "5855884836570009016"
+        },
+        {
+          "file": "projects/shared/src/lib/shared.component.spec.ts",
+          "hash": "650800385680690823",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "projects/shared/src/lib/shared.component.ts",
+          "hash": "15617281624713016543",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "projects/shared/src/lib/shared.service.spec.ts",
+          "hash": "5361797003877539571",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "projects/shared/src/lib/shared.service.ts",
+          "hash": "3783585000512505207",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "projects/shared/src/public-api.ts",
+          "hash": "8055451356635070380"
+        },
+        {
+          "file": "projects/shared/tsconfig.lib.json",
+          "hash": "12369024473565967613"
+        },
+        {
+          "file": "projects/shared/tsconfig.lib.prod.json",
+          "hash": "1939170332703490951"
+        },
+        {
+          "file": "projects/shared/tsconfig.spec.json",
+          "hash": "11730399207539946696"
         }
       ]
     }
