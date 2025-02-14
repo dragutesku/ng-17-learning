@@ -7,6 +7,27 @@
     <p>
       This is the homepage body
     </p>
+
+    <app-button (onClick)="increment()">
+      click me and then just touch me
+    </app-button>
+
+    <p>
+      The count: {{ getCount }}
+    </p>
+
+    <p>
+      The double count: {{ getDoubleCount }}
+    </p>
+
+    <app-card>
+      <h2 class="text-xl font-bold" slot="header">
+        Card Header
+      </h2>
+      <div slot="content">
+        Card Content
+      </div>
+    </app-card>
   </div>
 </app-page>
 
