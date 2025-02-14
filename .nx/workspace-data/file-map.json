@@ -101,7 +101,7 @@
         },
         {
           "file": "src/app/app.component.ts",
-          "hash": "14806624461679364130",
+          "hash": "724178911345407736",
           "deps": [
             "npm:@angular/core"
           ]
