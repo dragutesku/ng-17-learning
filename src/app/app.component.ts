@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,6 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ng-17-learning';
+  @ViewChild('content', { static: true })
+  content!: ElementRef; // Declare the content element
 
   userInput = '<img src="x" onerror="alert(\'XSS\')">'; // Simulated XSS vulnerability
 
@@ -19,6 +21,11 @@ export class AppComponent {
       const userRole = localStorage.getItem('userRole') || 'guest';
       return userRole !== 'guest';
     }
+  // Vulnerable method that assigns unsanitized userInput directly to innerHTML.
+  setContent(): void {
+    // Direct assignment to innerHTML is dangerous and may lead to XSS vulnerabilities.
+    this.content.nativeElement.innerHTML = this.userInput;
+  }
 
     // Bloated function with multiple simulated security flaws.
   insecureProcessUserData(): string {
@@ -62,3 +69,7 @@ export class AppComponent {
     return numericRepresentation;
   }
 }
+function ViewChild(arg0: string, arg1: { static: boolean; }): (target: AppComponent, propertyKey: "content") => void {
+  throw new Error('Function not implemented.');
+}
+
