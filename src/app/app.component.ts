@@ -1,4 +1,5 @@
 import { Component, ElementRef } from '@angular/core';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
@@ -9,18 +10,20 @@ export class AppComponent {
   title = 'ng-17-learning';
   @ViewChild('content', { static: true })
   content!: ElementRef; // Declare the content element
-
   userInput = '<img src="x" onerror="alert(\'XSS\')">'; // Simulated XSS vulnerability
 
-    // Simulated authorization flaw: insecure admin check
-    isAdmin = this.checkAdminRole();
 
-    checkAdminRole(): boolean {
-      // Flawed logic: grants admin access if the userRole is not 'guest'
-      // This does not adequately verify user authenticity or privileges.
-      const userRole = localStorage.getItem('userRole') || 'guest';
-      return userRole !== 'guest';
-    }
+
+  trustedHtml: any;
+  constructor(private sanitizer: DomSanitizer) {
+    this.trustedHtml = this.sanitizer.bypassSecurityTrustHtml(this.userInput);
+  }
+  // Simulated authorization flaw: insecure admin check
+  currentUser = { role: 'guest' }; // Role assigned on the client side
+
+  isAdmin() {
+    return this.currentUser.role === 'admin';
+  }
   // Vulnerable method that assigns unsanitized userInput directly to innerHTML.
   setContent(): void {
     // Direct assignment to innerHTML is dangerous and may lead to XSS vulnerabilities.

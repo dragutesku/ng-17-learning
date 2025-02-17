@@ -101,14 +101,15 @@
         },
         {
           "file": "src/app/app.component.ts",
-          "hash": "16406318108547813434",
+          "hash": "18058300828634311946",
           "deps": [
-            "npm:@angular/core"
+            "npm:@angular/core",
+            "npm:@angular/platform-browser"
           ]
         },
         {
           "file": "src/app/app.module.ts",
-          "hash": "11786967331629379240",
+          "hash": "13218527189137787823",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/platform-browser",
