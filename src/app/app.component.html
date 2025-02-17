@@ -3,5 +3,7 @@
 <p *ngIf="!isAdmin">not admin</p>
 
 
-<input type="text" #content>
+<input type="text" id="input1" #content>
+<input type="text" id="input2" [innerHTML]="userInput">
+
 <router-outlet></router-outlet>
